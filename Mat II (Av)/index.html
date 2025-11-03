@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamHomes Inmobiliaria</title>
+  <meta name="description" content="DreamHomes: compra, venta y alquiler de propiedades exclusivas. Encuentra tu hogar ideal con un buscador avanzado y atención personalizada." />
+  <!-- Fuentes: Momo (marca/hero) + Inter (texto general) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="inicio">
+    <nav class="container-nav" aria-label="Navegación principal">
+      <ul>
+        <li class="marca">DreamHomes</li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="#propiedades">Propiedades</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="#login">Login/Sign</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text-bottom" role="region" aria-labelledby="titulo-hero">
+      <h1 id="titulo-hero">DreamHomes Inmobiliaria</h1>
+      <p>Encuentra la casa de tus sueños</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== SECCIÓN QUIÉNES SOMOS ===== -->
+    <section id="quienes-somos" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>🏛️ Quiénes Somos</h2>
+        <p>En DreamHomes, creemos que cada espacio tiene una historia por contar. Somos una empresa dedicada a ofrecer soluciones inmobiliarias exclusivas, combinando diseño, calidad y compromiso con nuestros clientes. Nuestro objetivo es ayudarle a encontrar el hogar ideal o la inversión perfecta, garantizando transparencia, confianza y excelencia en cada paso.</p>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN PROPIEDADES + BUSCADOR ===== -->
+    <section id="propiedades" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>🏠 Propiedades Destacadas</h2>
+        <p class="subtitulo-seccion">Descubre nuestra selección de casas exclusivas</p>
+
+        <!-- === BUSCADOR === -->
+        <section class="seccion-busqueda">
+          <div class="contenedor-busqueda">
+            <h2>🔍 Encuentra tu Propiedad Ideal</h2>
+            <form id="form-filtros" class="filtros-avanzados">
+              <!-- Fila 1 -->
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="finalidad">🎯 Finalidad</label>
+                  <select id="finalidad" class="filtro-select">
+                    <option value="">Cualquiera</option>
+                    <option value="Comprar">Comprar</option>
+                    <option value="Alquilar">Alquilar</option>
+                    <option value="Invertir">Invertir</option>
+                  </select>
+                </div>
+                <div class="filtro-grupo">
+                  <label for="categoria">🏠 Categoría</label>
+                  <select id="categoria" class="filtro-select">
+                    <option value="">Todas</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Apartamento">Apartamento</option>
+                    <option value="Chalet">Chalet</option>
+                    <option value="Loft">Loft</option>
+                    <option value="Villa">Villa</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Fila 2 -->
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="ciudad">🏙️ Ciudad</label>
+                  <select id="ciudad" class="filtro-select">
+                    <option value="">Todas</option>
+                    <option value="Riviera">Riviera</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Marbella">Marbella</option>
+                    <option value="Sevilla">Sevilla</option>
+                  </select>
+                </div>
+                <div class="filtro-grupo">
+                  <label for="barrio">📍 Barrio</label>
+                  <select id="barrio" class="filtro-select">
+                    <option value="">Todos</option>
+                    <option value="Centro Histórico">Centro Histórico</option>
+                    <option value="Zona Residencial Norte">Zona Residencial Norte</option>
+                    <option value="Área Comercial Este">Área Comercial Este</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Fila 3 -->
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="dormitorios">🛏️ Dormitorios</label>
+                  <select id="dormitorios" class="filtro-select">
+                    <option value="">Cualquier cantidad</option>
+                    <option value="1">1 dormitorio</option>
+                    <option value="2">2 dormitorios</option>
+                    <option value="3">3 dormitorios</option>
+                    <option value="4">4+ dormitorios</option>
+                  </select>
+                </div>
+                <div class="filtro-grupo">
+                  <label for="precioMax">💰 Precio Máx.</label>
+                  <select id="precioMax" class="filtro-select">
+                    <option value="">Sin límite</option>
+                    <option value="100000">$100,000</option>
+                    <option value="200000">$200,000</option>
+                    <option value="300000">$300,000</option>
+                    <option value="500000">$500,000</option>
+                    <option value="750000">$750,000</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Fila 4 -->
+              <div class="fila-filtros">
+                <div class="filtro-grupo full-width">
+                  <label for="textoLibre">🔍 Búsqueda Libre</label>
+                  <input
+                    id="textoLibre"
+                    type="text"
+                    class="busqueda-libre"
+                    placeholder="Palabras clave: piscina, jardín, garaje..."
+                  />
+                </div>
+              </div>
+
+              <!-- Fila 5 -->
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="codigo">🔢 Código</label>
+                  <input
+                    id="codigo"
+                    type="text"
+                    class="codigo-input"
+                    placeholder="Código propiedad (ej: DH-001)"
+                  />
+                </div>
+                <div class="grupo-botones">
+                  <button id="btn-buscar" class="btn-buscar" type="submit">🚀 Buscar</button>
+                  <button id="btn-limpiar" class="btn-limpiar" type="button">🔄 Limpiar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- ===== RESULTADOS ===== -->
+        <div class="resultados-header" aria-live="polite">
+          <div class="contador-resultados">Resultados: <strong id="contador">0</strong></div>
+          <div class="ordenar-por">
+            <label for="ordenar">Ordenar:</label>
+            <select id="ordenar" class="filtro-select" onchange="filtrar()">
+              <option value="">Por defecto</option>
+              <option value="precio-asc">Precio ↑</option>
+              <option value="precio-desc">Precio ↓</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="resultados" class="grid-propiedades"></div>
+      </div>
+    </section>
+
+    <!-- ===== NUEVA SECCIÓN: Servicios ===== -->
+    <section id="servicios" class="contenido-seccion seccion-alternativa">
+      <div class="seccion-contenido">
+        <h2>🛠️ Servicios</h2>
+        <p>Ofrecemos acompañamiento integral: tasación, home staging, fotografía profesional, marketing digital, asesoría legal y gestión de alquileres. Nuestro equipo se encarga de todo para que te concentres en tu próxima mudanza.</p>
+      </div>
+    </section>
+
+    <!-- ===== NUEVA SECCIÓN: Misión & Valores ===== -->
+    <section id="mision" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>🎯 Misión & Valores</h2>
+        <p>Conectar personas con espacios que inspiren, de forma transparente y humana. Valoramos la honestidad, el diseño con propósito y las relaciones a largo plazo.</p>
+      </div>
+    </section>
+
+    <!-- ===== SECCIONES ADICIONALES ===== -->
+    <section id="nuestro-equipo" class="contenido-seccion seccion-alternativa">
+      <div class="seccion-contenido">
+        <h2>👔 Nuestro Equipo</h2>
+        <p>El equipo de DreamHomes está formado por profesionales con amplia experiencia en el mercado inmobiliario, arquitectura y gestión de propiedades. Cada miembro comparte la misma visión: brindar un servicio personalizado que supere las expectativas de nuestros clientes. Nos une la pasión por crear hogares donde las personas puedan construir sus sueños.</p>
+      </div>
+    </section>
+
+    <section id="inversores" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>💼 Inversores</h2>
+        <p>En DreamHomes, trabajamos junto a nuestros inversores para desarrollar proyectos con alto potencial de rentabilidad y sostenibilidad. Creemos en las alianzas estratégicas y en el valor de la confianza mutua. Si busca invertir en propiedades con visión de futuro, nuestro equipo estará encantado de asesorarle en cada etapa del proceso.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contenido-seccion seccion-contacto">
+      <div class="seccion-contenido">
+        <h2>✉️ Contáctenos</h2>
+        <div class="info-contacto">
+          <p>📍 <strong>Dirección:</strong> Av. Horizonte Dorado 125, Ciudad Central</p>
+          <p>📞 <strong>Teléfono:</strong> +1 (555) 238-9045</p>
+          <p>📧 <strong>Correo:</strong> contacto@dreamhomes.com</p>
+          <p>🕓 <strong>Horario de atención:</strong> Lunes a Viernes, 9:00 am – 6:00 pm</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="js/buscador.js"></script>
+</body>
+</html>
